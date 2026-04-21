@@ -217,18 +217,26 @@
 #user se number lo
 #check karo wo palindrone hai ya nahi
 #(121>yes,123>no)
-num = int(input("Enter number:"))
-original = num
-rev = 0
+# num = int(input("Enter number:"))
+# original = num
+# rev = 0
 
-while num > 0:
-    digit = num % 10
-    rev = rev * 10 + digit
-    num = num // 10
-if original == rev:
+# while num > 0:
+#     digit = num % 10
+#     rev = rev * 10 + digit
+#     num = num // 10
+# if original == rev:
+#     print("palindrome")
+# else:
+#     print("Not palindrome")   
+# 
+num = input("Enter number:")
+if num ==num[::-1]:
     print("palindrome")
 else:
-    print("Not palindrome")        
+    print("not palindrome")
+
+         
 
  
  
